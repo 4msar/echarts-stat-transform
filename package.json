@@ -1,12 +1,12 @@
 {
-  "name": "echarts-stat",
-  "version": "1.2.0",
+  "name": "echarts-stat-transform",
+  "version": "1.2.1",
   "description": "a statistical tool for ECharts",
   "main": "index.js",
   "types": "src/ecStat.d.ts",
   "author": {
-    "name": "Deqing Li",
-    "email": "annong035@gmail.com"
+    "name": "Saiful Alam",
+    "email": "hello@msar.me"
   },
   "scripts": {
     "build": "./node_modules/.bin/webpack",
@@ -15,7 +15,7 @@
   "license": "BSD",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ecomfe/echarts-stat"
+    "url": "https://github.com/4msar/echarts-stat-transform"
   },
   "devDependencies": {
     "webpack": "^1.13.3",
