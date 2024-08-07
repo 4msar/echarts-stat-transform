@@ -61,6 +61,6 @@ declare namespace EChartsStat {
     };
 }
 
-declare module "echarts-stat" {
+declare module "echarts-stat-transform" {
     export = EChartsStat;
 }

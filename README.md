@@ -11,10 +11,10 @@ It works both in node.js and in the browser.
 If you use npm, you can install it with:
 
 ```sh
-npm install echarts-stat
+npm install echarts-stat-transform
 ```
 
-Otherwise, download this tool from [dist directory](https://github.com/ecomfe/echarts-stat/tree/master/dist):
+Otherwise, download this tool from [dist directory](https://github.com/4msar/echarts-stat-transform/tree/master/dist):
 
 ```html
 <script src='./dist/ecStat.js'></script>
@@ -27,12 +27,12 @@ var result = ecStat.clustering.hierarchicalKMeans(data, clusterNumber, false);
 
 If using bundler (like webpack, rollup, etc.), for example:
 ```sh
-npm install echarts-stat
+npm install echarts-stat-transform
 npm install echarts
 ```
 ```js
 import * as echarts from 'echarts';
-import {transform} from 'echarts-stat';
+import {transform} from 'echarts-stat-transform';
 
 echarts.registerTransform(transform.histogram);
 
@@ -184,9 +184,9 @@ A histogram is a graphical representation of the distribution of numerical data.
 
 #### Examples
 
-[test/transform/histogram_bar.html](https://github.com/ecomfe/echarts-stat/blob/master/test/transform/histogram_bar.html)
+[test/transform/histogram_bar.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/transform/histogram_bar.html)
 
-[test/standalone/histogram_bar.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/histogram_bar.html)
+[test/standalone/histogram_bar.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/histogram_bar.html)
 
 
 ![histogram](img/histogram.png)
@@ -365,9 +365,9 @@ You can not only do cluster analysis through this interface, but also use [EChar
 
 ##### Directly visualize the final results of clustering
 
-[test/transform/clustering_bikmeans.html](https://github.com/ecomfe/echarts-stat/blob/master/test/transform/clustering_bikmeans.html)
+[test/transform/clustering_bikmeans.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/transform/clustering_bikmeans.html)
 
-[test/standalone/clustering_bikmeans.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/clustering_bikmeans.html)
+[test/standalone/clustering_bikmeans.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/clustering_bikmeans.html)
 
 ![static clustering](img/static-clustering.png)
 
@@ -375,7 +375,7 @@ You can not only do cluster analysis through this interface, but also use [EChar
 
 ##### Visualize the process of clustering
 
-[test/standalone/clustering_animation.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/clustering_animation.html)
+[test/standalone/clustering_animation.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/clustering_animation.html)
 
 ![dynamic clustering](http://g.recordit.co/DTTS8d0D4O.gif)
 
@@ -476,9 +476,9 @@ You can not only do regression analysis through this interface, you can also use
 
 ##### Linear Regression
 
-[test/transform/regression_linear.html](https://github.com/ecomfe/echarts-stat/blob/master/test/transform/regression_linear.html)
+[test/transform/regression_linear.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/transform/regression_linear.html)
 
-[test/standalone/regression_linear.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/regression_linear.html)
+[test/standalone/regression_linear.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/regression_linear.html)
 
 ![linear regression](img/linear.png)
 
@@ -486,9 +486,9 @@ You can not only do regression analysis through this interface, you can also use
 
 ##### Exponential Regression
 
-[test/transform/regression_exponential.html](https://github.com/ecomfe/echarts-stat/blob/master/test/transform/regression_exponential.html)
+[test/transform/regression_exponential.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/transform/regression_exponential.html)
 
-[test/standalone/regression_exponential.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/regression_exponential.html)
+[test/standalone/regression_exponential.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/regression_exponential.html)
 
 ![exponential regression](img/exponential.png)
 
@@ -496,9 +496,9 @@ You can not only do regression analysis through this interface, you can also use
 
 ##### Logarithmic Regression
 
-[test/transform/regression_logarithmic.html](https://github.com/ecomfe/echarts-stat/blob/master/test/transform/regression_logarithmic.html)
+[test/transform/regression_logarithmic.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/transform/regression_logarithmic.html)
 
-[test/standalone/regression_logarithmic.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/regression_logarithmic.html)
+[test/standalone/regression_logarithmic.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/regression_logarithmic.html)
 
 ![logarithmic regression](img/logarithmic.png)
 
@@ -506,9 +506,9 @@ You can not only do regression analysis through this interface, you can also use
 
 ##### Polynomial Regression
 
-[test/transform/regression_polynomial.html](https://github.com/ecomfe/echarts-stat/blob/master/test/transform/regression_polynomial.html)
+[test/transform/regression_polynomial.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/transform/regression_polynomial.html)
 
-[test/standalone/regression_polynomial.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/regression_polynomial.html)
+[test/standalone/regression_polynomial.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/regression_polynomial.html)
 
 ![polynomial regression](img/polynomial.png)
 

@@ -11,10 +11,10 @@ ecStat 是 [Apache ECharts](https://github.com/apache/echarts) 的统计和数�
 如果你使用 npm ，直接运行下面的命令:
 
 ```sh
- npm install echarts-stat
+ npm install echarts-stat-transform
 ```
 
-或者， 从 [dist](https://github.com/ecomfe/echarts-stat/tree/master/dist) 目录直接下载引用:
+或者， 从 [dist](https://github.com/4msar/echarts-stat-transform/tree/master/dist) 目录直接下载引用:
 
 ```html
 <script src='./dist/ecStat.js'></script>
@@ -28,12 +28,12 @@ var result = ecStat.clustering.hierarchicalKMeans(data, clusterNumber, false);
 
 如果使用打包工具（如 webpack、rollup 等），可参照下例：
 ```sh
-npm install echarts-stat
+npm install echarts-stat-transform
 npm install echarts
 ```
 ```js
 import * as echarts from 'echarts';
-import {transform} from 'echarts-stat';
+import {transform} from 'echarts-stat-transform';
 
 echarts.registerTransform(transform.histogram);
 
@@ -191,8 +191,8 @@ myChart.setOption(option);
 
 #### 实例
 
-[test/transform/histogram_bar.html](https://github.com/ecomfe/echarts-stat/blob/master/test/transform/histogram_bar.html)
-[test/standalone/histogram_bar.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/histogram_bar.html)
+[test/transform/histogram_bar.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/transform/histogram_bar.html)
+[test/standalone/histogram_bar.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/histogram_bar.html)
 
 ![histogram](img/histogram.png)
 
@@ -370,8 +370,8 @@ config = {
 
 ##### 直接可视化聚类算法的最终结果
 
-[test/transform/clustering_bikmeans.html](https://github.com/ecomfe/echarts-stat/blob/master/test/transform/clustering_bikmeans.html)
-[test/standalone/clustering_bikmeans.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/clustering_bikmeans.html)
+[test/transform/clustering_bikmeans.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/transform/clustering_bikmeans.html)
+[test/standalone/clustering_bikmeans.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/clustering_bikmeans.html)
 
 
 ![static clustering](img/static-clustering.png)
@@ -380,7 +380,7 @@ config = {
 
 ##### 可视化聚类的过程
 
-[test/standalone/clustering_animation.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/clustering_animation.html)
+[test/standalone/clustering_animation.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/clustering_animation.html)
 
 ![dynamic clustering](http://g.recordit.co/DTTS8d0D4O.gif)
 
@@ -481,8 +481,8 @@ config = {
 
 ##### 线性回归
 
-[test/transform/regression_linear.html](https://github.com/ecomfe/echarts-stat/blob/master/test/transform/regression_linear.html)
-[test/standalone/regression_linear.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/regression_linear.html)
+[test/transform/regression_linear.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/transform/regression_linear.html)
+[test/standalone/regression_linear.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/regression_linear.html)
 
 ![linear regression](img/linear.png)
 
@@ -490,8 +490,8 @@ config = {
 
 ##### 指数回归
 
-[test/transform/regression_exponential.html](https://github.com/ecomfe/echarts-stat/blob/master/test/transform/regression_exponential.html)
-[test/standalone/regression_exponential.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/regression_exponential.html)
+[test/transform/regression_exponential.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/transform/regression_exponential.html)
+[test/standalone/regression_exponential.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/regression_exponential.html)
 
 ![exponential regression](img/exponential.png)
 
@@ -499,8 +499,8 @@ config = {
 
 ##### 对数回归
 
-[test/transform/regression_logarithmic.html](https://github.com/ecomfe/echarts-stat/blob/master/test/transform/regression_logarithmic.html)
-[test/standalone/regression_logarithmic.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/regression_logarithmic.html)
+[test/transform/regression_logarithmic.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/transform/regression_logarithmic.html)
+[test/standalone/regression_logarithmic.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/regression_logarithmic.html)
 
 ![logarithmic regression](img/logarithmic.png)
 
@@ -508,8 +508,8 @@ config = {
 
 ##### 多项式回归
 
-[test/transform/regression_polynomial.html](https://github.com/ecomfe/echarts-stat/blob/master/test/transform/regression_polynomial.html)
-[test/standalone/regression_polynomial.html](https://github.com/ecomfe/echarts-stat/blob/master/test/standalone/regression_polynomial.html)
+[test/transform/regression_polynomial.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/transform/regression_polynomial.html)
+[test/standalone/regression_polynomial.html](https://github.com/4msar/echarts-stat-transform/blob/master/test/standalone/regression_polynomial.html)
 
 ![polynomial regression](img/polynomial.png)
 
@@ -640,6 +640,3 @@ var sumValue = ecStat.statistics.sum(dataList);
 ##### 返回值说明
 
 * `sumValue`: `number`. 返回输入数组 *dataList* 的求和结果。
-
-
-
